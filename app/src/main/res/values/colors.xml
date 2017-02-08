@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="holder_normal">#E84A40</color>
+    <color name="holder_pressed">#E22F2F</color>
+
+    <color name="title_color">#428fe5</color>
+    <color name="black">#000</color>
+    <color name="black_text">#333</color>
+    <color name="gray">#ccc</color>
+
+    <color name="gray_text">#999</color>
+    <color name="write">#fff</color>
+    <color name="main_background">#eff2f5</color>
+    <color name="text_black">#333</color>
+    <color name="blue">#2b20c2</color>
+    <color name="bg_gray">#d9d9d9</color>
+    <color name="dark_gray">#666</color>
+    <color name="glue">#21bf78</color>
+</resources>

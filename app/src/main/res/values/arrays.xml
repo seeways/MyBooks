@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>衣服鞋帽</item>
+        <item>餐饮零食</item>
+        <item>住房用度</item>
+        <item>交通出行</item>
+        <item>聚会招待</item>
+        <item>生活用度</item>
+        <item>工资奖金</item>
+        <item>投资盈利</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="earnings">
+        <item>支出</item>
+        <item>收入</item>
+    </string-array>
+
+</resources>

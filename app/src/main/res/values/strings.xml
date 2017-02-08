@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">我的记账本</string>
+
+    <string name="login_username">帐号</string>
+    <string name="login_password">密码</string>
+    <string name="login_password2">确认密码</string>
+    <string name="login">登 录</string>
+    <string name="login_username_hint">请输入用户名</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_password_confirm">请确认密码</string>
+    <string name="login_register_link" >立即注册</string>
+    <string name="login_forgot_password">忘记密码</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+
+    <string name="register">注册</string>
+    <string name="exit">退出</string>
+    <string name="main_add_notes">记他娘的一笔</string>
+    <string name="main_update">账号信息</string>
+    <string name="waiting">功能暂未开启，敬请期待！</string>
+    <string name="username_not_null">账号不能为空！</string>
+    <string name="password_not_null">密码不能为空！</string>
+    <string name="username_not_exist">账号不存在啊！</string>
+
+    <string name="detailbill">详细账单</string>
+    <string name="time">时间:</string>
+    <string name="type">类型:</string>
+    <string name="money">金额:</string>
+    <string name="zero">000000</string>
+    <string name="updata_bill">修改账单信息</string>
+    <string name="remark">备注：</string>
+    <string name="earnings">收益：</string>
+    <string name="remark_hint">如有多项，请用逗号隔开</string>
+    <string name="money_not_null">金额不能为空!</string>
+    <string name="username_not_same">密码不一致，请重输！</string>
+    <string name="all_data">全部账务</string>
+    <string name="update_user">修改密码</string>
+    <string name="exitlogin">退出登录</string>
+    <string name="update">修改</string>
+    <string name="me">交流群 374542330</string>
+    <string name="mytest">测试专用按钮</string>
+    <string name="yearfind">年度查询</string>
+    <string name="monthfind">月度查询</string>
+
+</resources>

@@ -1,0 +1,223 @@
+<com.mybooks.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+
+            android:id="@+id/main_layout_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <!-- 账号 -->
+            <TextView
+                style="@style/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/login_username"
+                android:textSize="50sp" />
+
+
+            <TextView
+                android:id="@+id/main_user_name"
+                style="@style/normalText"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/login_username"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignLeft="@id/main_layout_left"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 全部账务button -->
+            <Button
+                android:id="@+id/yearfind_bt"
+                style="@style/normalText"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/background_login_button"
+                android:text="@string/yearfind"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/monthfind_bt"
+                style="@style/normalText"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_login_button"
+                android:text="@string/monthfind"
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/all_data_bt"
+                style="@style/normalText"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_login_button"
+                android:text="@string/all_data"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            <!-- 修改button -->
+
+            <Button
+                android:id="@+id/bt_main_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_login_button"
+                android:text="@string/update_user"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:textSize="20sp" />
+            <!-- 退出button -->
+
+            <Button
+                android:id="@+id/bt_main_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/background_login_button"
+                android:text="@string/exitlogin"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="@string/me"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.mybooks.view.MyRelativeLayout
+        android:background="@drawable/bg_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_layout_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lly_main"
+
+                android:layout_width="fill_parent"
+                android:layout_height="160dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_main_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="time"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal">
+
+                    <com.mybooks.view.CornerListView
+                        android:id="@+id/lv_main_calculation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+
+                        android:cacheColorHint="#AAFF7B">
+                    </com.mybooks.view.CornerListView>
+
+                    <LinearLayout
+                        android:id="@+id/ll_piechart"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_main_addnotes"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_below="@+id/lly_main"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/background_main_button"
+                android:text="@string/main_add_notes"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/bt_main_update"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_below="@+id/lly_main"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/background_main_button"
+                android:gravity="center"
+                android:text="@string/main_update"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <com.mybooks.view.CornerListView
+
+                android:id="@+id/lv_main_datareport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_main_addnotes"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dip"
+                android:cacheColorHint="#AAFF7B"></com.mybooks.view.CornerListView>
+        </LinearLayout>
+    </com.mybooks.view.MyRelativeLayout>
+
+</com.mybooks.view.DragLayout>
